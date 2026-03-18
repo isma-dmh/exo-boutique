@@ -6,7 +6,7 @@ function Hero() {
   return (
     <div id="hero">
       <div id="left-hero-part">
-        <h4 class="title">COLLECTION SPRING/SUMMER 2026</h4>
+        <h4 className="title">COLLECTION SPRING/SUMMER 2026</h4>
         <h1 id="slogan-hero">
           WEAR
           <span id="your">YOUR</span>

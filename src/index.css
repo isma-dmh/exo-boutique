@@ -2,7 +2,7 @@
 
 :root {
   --primary: #c9a84c;
-  --secondary: rgba(100, 92, 92, 0.5);
+  --secondary: rgba(149, 143, 143, 0.5);
 }
 
 #root {
@@ -44,6 +44,7 @@ body {
 
 h1 {
   font-family: "Bebas Neue";
+  font-size: 70px;
 }
 
 .text-primary {
@@ -89,7 +90,8 @@ header {
   background-color: black;
   padding: 15px 2rem;
 
-  h1 {
+  #logo {
+    font-size: xx-large;
     span {
       color: var(--primary);
     }
@@ -155,8 +157,13 @@ header {
   display: flex;
   justify-content: space-around;
   line-height: 30px;
-  padding: 20px 0;
+  padding-top: 50px;
   border-top: solid 1px var(--secondary);
+  text-align: center;
+}
+
+#title-stat {
+  font-size: 50px;
 }
 
 #right-hero-part {
@@ -202,3 +209,56 @@ header {
   white-space: nowrap;
   font-size: 20px;
 }
+
+#univers {
+  padding: 2rem 4rem;
+}
+
+#cards {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#cards > .card {
+  flex: 1;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  max-height: 400px;
+  text-decoration: none;
+  color: white;
+}
+
+#cards > .card:hover {
+  color: var(--primary);
+  transform: scale(1.1);
+
+  .img-card {
+    filter: brightness(1.2);
+  }
+}
+
+#cards > .card > .img-card {
+  width: 100%;
+  height: 60%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: 0.3s;
+}
+
+#cards > .card > .text-card {
+  font-size: 20px;
+}
+
+#cards > .card > .show-more {
+  letter-spacing: 4px;
+}
+

@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Rajdhani:wght@300;400;500;600;700&family=Righteous&family=Share+Tech+Mono&family=Syne:wght@400..800&display=swap");
+
+:root {
+  --primary: #c9a84c;
+  --secondary: rgba(100, 92, 92, 0.5);
+}
+
+#root {
+  overflow: hidden;
+}
+
+.bebas {
+  font-family: "Bebas Neue", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.syne {
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.dm-mono {
+  font-family: "DM Mono";
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #0c0c0d;
+  color: white;
+  font-family: "Syne";
+}
+
+h1 {
+  font-family: "Bebas Neue";
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+  font-size: 15px;
+  font-family: "Syne";
+}
+
+.boutton {
+  padding: 1rem;
+  border: none;
+}
+
+.classique {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border: solid 1px var(--secondary);
+}
+
+.gold {
+  background-color: var(--primary);
+  font-weight: bold;
+}
+
+.title {
+  color: var(--primary);
+  font-weight: lighter;
+  letter-spacing: 5px;
+  text-decoration: underline;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 5px;
+  border-bottom: solid 1px var(--secondary);
+  background-color: black;
+  padding: 15px 2rem;
+
+  h1 {
+    span {
+      color: var(--primary);
+    }
+  }
+
+  nav > ul > li > a {
+    color: var(--secondary);
+    font-size: small;
+  }
+
+  ul {
+    display: flex;
+    gap: 2rem;
+
+    li {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}
+
+#hero {
+  display: flex;
+}
+
+#left-hero-part {
+  padding: 2rem 4rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: rgba(0, 0, 0, 0.368);
+}
+
+#slogan-hero {
+  font-size: 130px;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 90%;
+}
+
+#your {
+  -webkit-text-stroke: 1px var(--secondary);
+  color: transparent;
+  flex: 1 100%;
+}
+
+#legend {
+  color: var(--primary);
+  flex: 1 100%;
+}
+
+#buttons {
+  display: flex;
+  gap: 30px;
+}
+
+#stat {
+  display: flex;
+  justify-content: space-around;
+  line-height: 30px;
+  padding: 20px 0;
+  border-top: solid 1px var(--secondary);
+}
+
+#right-hero-part {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+#sneakers-hero {
+  width: 600px;
+  object-fit: contain;
+}
+
+#bandeau {
+  border: solid 1px var(--secondary);
+  border-left: none;
+  border-right: none;
+  padding: 40px;
+  background-color: black;
+  margin-bottom: 50px;
+  max-height: 40px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  transition: linear 0.1s;
+}
+
+#bandeau > .marque {
+  font-size: 30px;
+  padding: 0 70px;
+  white-space: nowrap;
+  transition: ease-in-out 0.4s;
+}
+
+#bandeau > .marque:hover {
+  color: var(--primary);
+  cursor: crosshair;
+}
+
+#bandeau > .plus {
+  padding: 0 50px;
+  white-space: nowrap;
+  font-size: 20px;
+}
